@@ -1,17 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM  from "react-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const usuario = {
+  name: 'matio',
+  last: 'pipiolo',
+  age: 38,
+  avatar: 'https://avatars.githubusercontent.com/u/137311764?v=4'
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+function data(usuario){
+  return usuario.name+' '+usuario.last
+}
+
+const el = (
+  <div>
+    <h1>oli, soy {data(usuario)}, 
+      y tengo {usuario.age} añitos</h1>
+    <img src={usuario.avatar} alt="yop"/>
+  </div>
+)
+
+const container = document.getElementById('root')
+ReactDOM.render(el, container)
