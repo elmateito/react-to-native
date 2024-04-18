@@ -1,0 +1,22 @@
+.upper{
+    border: 1px solid black;
+    width: fit-content;
+    padding: 0 5%;
+    background: gainsboro;
+}
+
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 45px;
+    color: green;
+    font-weight: bold;
+}
+
+.pipiolo{
+    transition: width .8s ease-in-out;
+}
+
+.pipiolo:hover{
+    width: 720px;
+    height: 240px;
+}
