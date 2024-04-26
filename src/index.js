@@ -27,7 +27,7 @@ root.render(el) */
 
 root.render(<Comp 
   nombre='matio'
-  edad='30'
+  edad='estudiante en analisis y desarrollo de software, piraña, hueso rapper'
   color='#7a1b0c'
 />)
 

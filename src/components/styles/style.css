@@ -1,7 +1,15 @@
+.box{
+    background: black;
+    padding: 2.5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .upper{
     border: 1px solid black;
     width: fit-content;
-    padding: 0 5%;
+    padding: 0.5%;
     background: gainsboro;
 }
 
@@ -10,6 +18,15 @@ h1{
     font-size: 45px;
     color: green;
     font-weight: bold;
+}
+
+.nameTitle{
+    font-size: 50px;
+    color: azure;
+}
+
+.bodyTitle{
+    font-size: 30px;
 }
 
 .pipiolo{

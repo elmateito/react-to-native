@@ -6,13 +6,13 @@ class Comp extends React.Component{
     render(){
         const{nombre, edad, color} = this.props
         return (
-        <div>
+        <div className="box">
             <div className="upper">
-                <h1>Componente</h1>
+                <img src={MyImg} alt="yopitiyop" className="pipiolo"/>
             </div>
             <div>
-                <p style={{color:`${color}`}}>m pica el pn {nombre}, y tengo {edad} años</p>
-                <img src={MyImg} alt="yopitiyop" className="pipiolo"/>
+                <p className="nameTitle">mi nombre es {nombre}</p>
+                <p className="bodyTitle" style={{color:`${color}`}}>y soy {edad}</p>
             </div>
         </div>
         )
